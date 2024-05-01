@@ -36,7 +36,7 @@ app.get('/posts/new',(req,res)=>{
     res.render('create')
 })
 app.post('/posts/store',(req,res)=>{
-    // model creates a new doc with browser data
+    // model creates a new doc with browser data 
     BlogPost.create(req.body).
     then(blogpost =>{
         console.log(blogpost)
